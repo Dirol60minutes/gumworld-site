@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="GumWorld — модовый Minecraft-сервер."
+    >
+
+    <title>GumWorld — Minecraft Server</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+
+<body>
+
+    <!-- ==========================================
+         HEADER
+    =========================================== -->
+
+    <header class="header">
+
+        <div class="container header-container">
+
+            <a
+                href="#home"
+                class="logo"
+            >
+                <span class="logo-icon">
+                    🍬
+                </span>
+
+                <span>
+                    GumWorld
+                </span>
+            </a>
+
+
+            <nav class="navigation">
+
+                <a href="#home">
+                    Главная
+                </a>
+
+                <a href="#about">
+                    О сервере
+                </a>
+
+                <a href="#mods">
+                    Сборка
+                </a>
+
+                <a href="#donate">
+                    Донат
+                </a>
+
+                <a href="#team">
+                    Команда
+                </a>
+
+            </nav>
+
+
+            <a
+                class="discord-button"
+                href="#"
+                id="discordButton"
+            >
+                Discord
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- ==========================================
+             ГЛАВНАЯ
+        =========================================== -->
+
+        <section
+            class="hero"
+            id="home"
+        >
+
+            <div class="hero-glow hero-glow-one"></div>
+
+            <div class="hero-glow hero-glow-two"></div>
+
+
+            <div class="container hero-container">
+
+
+                <div class="hero-content">
+
+                    <div class="server-badge">
+
+                        <span class="status-dot"></span>
+
+                        Модовый Minecraft-сервер
+
+                    </div>
+
+
+                    <h1>
+
+                        Добро пожаловать
+
+                        <span>
+                            в GumWorld
+                        </span>
+
+                    </h1>
+
+
+                    <p class="hero-description">
+
+                        Исследуй огромный модовый мир,
+                        развивайся, строй, создавай технологии
+                        и играй вместе с нашим сообществом.
+
+                    </p>
+
+
+                    <div class="hero-buttons">
+
+                        <button
+                            class="primary-button"
+                            id="copyIpButton"
+                            type="button"
+                        >
+                            🎮 Скопировать IP
+                        </button>
+
+
+                        <a
+                            href="#about"
+                            class="secondary-button"
+                        >
+                            Узнать больше
+                        </a>
+
+                    </div>
+
+
+                    <p
+                        class="copy-message"
+                        id="copyMessage"
+                    ></p>
+
+                </div>
+
+
+                <!-- ==========================================
+                     СТАТУС СЕРВЕРА
+                =========================================== -->
+
+                <div class="server-card">
+
+                    <div class="server-card-header">
+
+                        <div>
+
+                            <p class="small-label">
+                                СТАТУС СЕРВЕРА
+                            </p>
+
+                            <h2>
+                                GumWorld
+                            </h2>
+
+                        </div>
+
+
+                        <div
+                            class="server-status"
+                            id="serverStatus"
+                        >
+
+                            <span class="status-dot"></span>
+
+                            Онлайн
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="server-info-grid">
+
+                        <div class="server-info">
+
+                            <span class="info-icon">
+                                👥
+                            </span>
+
+                            <div>
+
+                                <p>
+                                    Игроки
+                                </p>
+
+                                <strong id="playerCount">
+                                    — / —
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="server-info">
+
+                            <span class="info-icon">
+                                🧩
+                            </span>
+
+                            <div>
+
+                                <p>
+                                    Версия
+                                </p>
+
+                                <strong id="serverVersion">
+                                    Загрузка...
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="server-info full-width">
+
+                            <span class="info-icon">
+                                🌐
+                            </span>
+
+                            <div>
+
+                                <p>
+                                    Адрес сервера
+                                </p>
+
+                                <strong id="serverAddress">
+                                    gumworld.noob.club
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             О СЕРВЕРЕ
+        =========================================== -->
+
+        <section
+            class="section"
+            id="about"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        GUMWORLD
+                    </p>
+
+                    <h2>
+                        Не просто Minecraft
+                    </h2>
+
+                    <p>
+
+                        GumWorld — место, где обычное
+                        выживание превращается в большое
+                        модовое приключение.
+
+                    </p>
+
+                </div>
+
+
+                <div class="features">
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            ⚙️
+                        </div>
+
+                        <h3>
+                            Модовая сборка
+                        </h3>
+
+                        <p>
+
+                            Технологии, новые механики,
+                            предметы и множество возможностей
+                            для развития.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            🌍
+                        </div>
+
+                        <h3>
+                            Большой мир
+                        </h3>
+
+                        <p>
+
+                            Исследуй мир, находи интересные
+                            места и создавай собственную
+                            историю.
+
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card">
+
+                        <div class="feature-icon">
+                            💜
+                        </div>
+
+                        <h3>
+                            Сообщество
+                        </h3>
+
+                        <p>
+
+                            Играй вместе с другими участниками,
+                            общайся в Discord и находи
+                            новых друзей.
+
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             СБОРКА
+        =========================================== -->
+
+        <section
+            class="section section-dark"
+            id="mods"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        СБОРКА
+                    </p>
+
+                    <h2>
+                        Всё необходимое для игры
+                    </h2>
+
+                    <p>
+
+                        Скачай сборку GumWorld и NeoForge,
+                        чтобы подготовить Minecraft
+                        для подключения к серверу.
+
+                    </p>
+
+                </div>
+
+
+                <div class="download-card">
+
+                    <div>
+
+                        <span class="download-icon">
+                            📦
+                        </span>
+
+                        <h3>
+                            GumWorld Modpack
+                        </h3>
+
+                        <p>
+
+                            Готовая сборка модов,
+                            необходимая для игры
+                            на сервере GumWorld.
+
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        class="modpack-download-button"
+                        href="https://drive.google.com/drive/folders/1flrdGt2AJrT5dBTFUce9heENGvHTJhRK"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        📦 Скачать сборку
+                    </a>
+
+                </div>
+
+
+                <div class="download-space"></div>
+
+
+                <div class="download-card">
+
+                    <div>
+
+                        <span class="download-icon">
+                            🔥
+                        </span>
+
+                        <h3>
+                            NeoForge
+                        </h3>
+
+                        <p>
+
+                            Загрузчик модов,
+                            необходимый для запуска
+                            сборки GumWorld.
+
+                        </p>
+
+                    </div>
+
+
+                    <a
+                        class="modpack-download-button"
+                        href="https://neoforged.net/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        🔥 Скачать NeoForge
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             ДОНАТ
+        =========================================== -->
+
+        <section
+            class="section donate-section"
+            id="donate"
+        >
+
+            <div class="donate-glow donate-glow-left"></div>
+            <div class="donate-glow donate-glow-right"></div>
+
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        ПОДДЕРЖАТЬ ПРОЕКТ
+                    </p>
+
+                    <h2>
+                        Поддержи GumWorld 💜
+                    </h2>
+
+                    <p>
+
+                        GumWorld развивается благодаря
+                        нашему сообществу. Поддержка помогает
+                        оплачивать сервер и улучшать проект.
+
+                    </p>
+
+                </div>
+
+
+                <div class="donate-card">
+
+
+                    <div class="donate-icon">
+                        💜
+                    </div>
+
+
+                    <div class="donate-content">
+
+                        <p class="section-label">
+                            ПОДДЕРЖКА GUMWORLD
+                        </p>
+
+
+                        <h3>
+                            Помоги проекту развиваться
+                        </h3>
+
+
+                        <p>
+
+                            Если тебе нравится GumWorld,
+                            ты можешь добровольно поддержать проект.
+                            Любая поддержка помогает нам
+                            продолжать развитие сервера.
+
+                        </p>
+
+
+                        <div class="donate-info">
+
+
+                            <div class="donate-info-item">
+
+                                <span>
+                                    🖥️
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        Оплата сервера
+                                    </strong>
+
+                                    <p>
+                                        Поддержка работы GumWorld
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="donate-info-item">
+
+                                <span>
+                                    🧩
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        Развитие сборки
+                                    </strong>
+
+                                    <p>
+                                        Новые моды и возможности
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="donate-info-item">
+
+                                <span>
+                                    🚀
+                                </span>
+
+                                <div>
+
+                                    <strong>
+                                        Развитие проекта
+                                    </strong>
+
+                                    <p>
+                                        Улучшение GumWorld
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <a
+                        class="donate-button"
+                        href="https://send.monobank.ua/jar/4XhfESqEkd"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        💳 Поддержать GumWorld
+                    </a>
+
+                </div>
+
+
+                <div class="donate-warning">
+
+                    <span>
+                        💡
+                    </span>
+
+                    <p>
+
+                        Поддержка полностью добровольная.
+                        Играть на GumWorld можно без доната.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             КОМАНДА
+        =========================================== -->
+
+        <section
+            class="section section-dark team-section"
+            id="team"
+        >
+
+            <div class="team-glow team-glow-left"></div>
+            <div class="team-glow team-glow-right"></div>
+
+
+            <div class="container team-container">
+
+                <div class="section-heading team-heading">
+
+                    <p class="section-label">
+                        КОМАНДА
+                    </p>
+
+                    <h2>
+                        Команда GumWorld
+                    </h2>
+
+                    <p>
+
+                        Пока нас немного, но именно мы
+                        создаём, развиваем и поддерживаем GumWorld.
+
+                    </p>
+
+                </div>
+
+
+                <div class="team-grid">
+
+
+                    <!-- ==========================================
+                         ORBIT
+                    =========================================== -->
+
+                    <article class="member-card">
+
+                        <div class="member-avatar">
+
+                            <img
+                                src="assets/orbit.jpg"
+                                alt="Orbit60minutes"
+                            >
+
+                        </div>
+
+
+                        <div class="member-content">
+
+                            <div class="member-name-row">
+
+                                <div>
+
+                                    <span class="member-crown">
+                                        👑
+                                    </span>
+
+                                    <h3>
+                                        Orbit60minutes
+                                    </h3>
+
+                                </div>
+
+
+                                <span class="member-owner-badge">
+                                    Владелец
+                                </span>
+
+                            </div>
+
+
+                            <div class="member-roles">
+
+                                <span class="role role-engineer">
+                                    ⚙️ Bubble Engineer
+                                </span>
+
+                            </div>
+
+
+                            <p class="member-description">
+
+                                Технический администратор
+                                Minecraft-сервера и владелец
+                                проекта GumWorld.
+
+                            </p>
+
+
+                            <div class="member-duties">
+
+                                <div>
+                                    <span>⚙️</span>
+                                    Техническая часть Minecraft
+                                </div>
+
+                                <div>
+                                    <span>👑</span>
+                                    Управление проектом
+                                </div>
+
+                                <div>
+                                    <span>🧩</span>
+                                    Развитие сервера
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ==========================================
+                         DIROL
+                    =========================================== -->
+
+                    <article class="member-card">
+
+                        <div class="member-avatar dirol-avatar">
+
+                            <img
+                                src="assets/dirol.png"
+                                alt="Dirol60minutes"
+                            >
+
+                        </div>
+
+
+                        <div class="member-content">
+
+                            <div class="member-name-row">
+
+                                <div>
+
+                                    <span class="member-crown">
+                                        💜
+                                    </span>
+
+                                    <h3>
+                                        Dirol60minutes
+                                    </h3>
+
+                                </div>
+
+
+                                <span class="member-admin-badge">
+                                    Администратор
+                                </span>
+
+                            </div>
+
+
+                            <div class="member-roles">
+
+                                <span class="role role-engineer">
+                                    ⚙️ Bubble Engineer
+                                </span>
+
+                                <span class="role role-support">
+                                    💚 Bubble Support
+                                </span>
+
+                            </div>
+
+
+                            <p class="member-description">
+
+                                Администратор Minecraft-сервера,
+                                технический администратор Discord-бота
+                                GumHelp и создатель сайта GumWorld.
+
+                            </p>
+
+
+                            <div class="member-duties">
+
+                                <div>
+                                    <span>🛡️</span>
+                                    Администрирование Minecraft
+                                </div>
+
+                                <div>
+                                    <span>🤖</span>
+                                    Развитие GumHelp
+                                </div>
+
+                                <div>
+                                    <span>🌐</span>
+                                    Разработка сайта
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- ==========================================
+                     ТРЕБОВАНИЯ
+                =========================================== -->
+
+                <div class="requirements-card">
+
+                    <div class="requirements-header">
+
+                        <p class="section-label">
+                            ТРЕБОВАНИЯ
+                        </p>
+
+                        <h3>
+                            Хочешь стать частью команды?
+                        </h3>
+
+                        <p>
+
+                            Перед подачей заявки убедись,
+                            что ты подходишь под основные
+                            требования GumWorld.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="requirements-grid">
+
+
+                        <div class="requirement-item">
+
+                            <span class="requirement-icon">
+                                🎂
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Возраст от 14 лет
+                                </strong>
+
+                                <p>
+
+                                    Мы ищем участников от 14 лет,
+                                    которые готовы серьёзно относиться
+                                    к своим обязанностям.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="requirement-item">
+
+                            <span class="requirement-icon">
+                                🧠
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Адекватность
+                                </strong>
+
+                                <p>
+
+                                    Спокойное общение с игроками,
+                                    уважение к другим участникам
+                                    и умение решать конфликты.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="requirement-item">
+
+                            <span class="requirement-icon">
+                                🛡️
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Ответственность
+                                </strong>
+
+                                <p>
+
+                                    Если взял на себя задачу —
+                                    постарайся выполнить её
+                                    и не пропадай без предупреждения.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="requirement-item">
+
+                            <span class="requirement-icon">
+                                ⏰
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Активность
+                                </strong>
+
+                                <p>
+
+                                    Не обязательно находиться на сервере
+                                    весь день, но важно регулярно
+                                    участвовать в жизни GumWorld.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="requirement-item">
+
+                            <span class="requirement-icon">
+                                💬
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Наличие Discord
+                                </strong>
+
+                                <p>
+
+                                    Общение команды, задачи
+                                    и важные вопросы обсуждаются
+                                    через наш Discord-сервер.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="requirement-item">
+
+                            <span class="requirement-icon">
+                                💜
+                            </span>
+
+                            <div>
+
+                                <strong>
+                                    Желание помогать проекту
+                                </strong>
+
+                                <p>
+
+                                    Нам нужны люди, которым действительно
+                                    интересно развивать GumWorld
+                                    и делать сервер лучше.
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="requirements-note">
+
+                        <span>
+                            ✨
+                        </span>
+
+                        <p>
+
+                            Соответствие требованиям не гарантирует
+                            принятие в команду. Каждая заявка
+                            рассматривается отдельно.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==========================================
+                     НАБОР
+                =========================================== -->
+
+                <div class="recruitment-card">
+
+                    <div class="recruitment-icon">
+                        👥
+                    </div>
+
+
+                    <div class="recruitment-content">
+
+                        <p class="section-label">
+                            НАБОР В КОМАНДУ
+                        </p>
+
+                        <h3>
+                            Стань частью GumWorld
+                        </h3>
+
+                        <p>
+                            Сейчас открыты три направления:
+                        </p>
+
+
+                        <div class="recruitment-roles">
+
+                            <div>
+
+                                🛠️
+
+                                <strong>
+                                    Helper
+                                </strong>
+
+                                — помощь игрокам и работа
+                                с обращениями.
+
+                            </div>
+
+
+                            <div>
+
+                                🔨
+
+                                <strong>
+                                    Moderator
+                                </strong>
+
+                                — контроль порядка и соблюдения
+                                правил сервера.
+
+                            </div>
+
+
+                            <div>
+
+                                🏗️
+
+                                <strong>
+                                    Builder
+                                </strong>
+
+                                — строительство и оформление
+                                мира GumWorld.
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <a
+                        href="#"
+                        class="recruitment-button"
+                        id="teamDiscordButton"
+                    >
+                        💬 Подать заявку
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+         FOOTER
+    =========================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div class="footer-brand">
+
+                <div class="footer-logo">
+                    🍬 GumWorld
+                </div>
+
+                <p>
+                    Модовый Minecraft-сервер
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#home">
+                    Главная
+                </a>
+
+                <a href="#mods">
+                    Сборка
+                </a>
+
+                <a href="#donate">
+                    Донат
+                </a>
+
+                <a href="#team">
+                    Команда
+                </a>
+
+                <a
+                    href="https://discord.gg/zU57nHHbJE"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Discord
+                </a>
+
+            </div>
+
+
+            <p class="copyright">
+
+                ©
+                <span id="currentYear"></span>
+                GumWorld
+
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
