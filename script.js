@@ -1,6 +1,17 @@
-const SERVER_IP =
-    "gumworld.noob.club";
+// ==========================================
+// GUMWORLD CONFIG
+// ==========================================
 
+const SERVER_IP = "gumworld.noob.club";
+
+const SERVER_API =
+    "https://api.mcsrvstat.us/3/" +
+    SERVER_IP;
+
+
+// ==========================================
+// ELEMENTS
+// ==========================================
 
 const copyIpButton =
     document.getElementById(
@@ -44,21 +55,27 @@ const serverAddress =
     );
 
 
+const heroStatusText =
+    document.getElementById(
+        "heroStatusText"
+    );
+
+
+const heroStatusDot =
+    document.getElementById(
+        "heroStatusDot"
+    );
+
+
 const currentYear =
     document.getElementById(
         "currentYear"
     );
 
 
-
-if (serverAddress) {
-
-    serverAddress.textContent =
-        SERVER_IP;
-
-}
-
-
+// ==========================================
+// YEAR
+// ==========================================
 
 if (currentYear) {
 
@@ -68,6 +85,21 @@ if (currentYear) {
 }
 
 
+// ==========================================
+// SERVER ADDRESS
+// ==========================================
+
+if (serverAddress) {
+
+    serverAddress.textContent =
+        SERVER_IP;
+
+}
+
+
+// ==========================================
+// COPY IP
+// ==========================================
 
 async function copyServerIp() {
 
@@ -131,6 +163,9 @@ async function copyServerIp() {
 }
 
 
+// ==========================================
+// COPY EVENTS
+// ==========================================
 
 if (copyIpButton) {
 
@@ -140,7 +175,6 @@ if (copyIpButton) {
     );
 
 }
-
 
 
 if (serverAddressButton) {
@@ -153,6 +187,161 @@ if (serverAddressButton) {
 }
 
 
+// ==========================================
+// ONLINE STATE
+// ==========================================
+
+function showOnline(data) {
+
+    if (serverStatus) {
+
+        serverStatus.classList.remove(
+            "offline"
+        );
+
+
+        serverStatus.innerHTML =
+            `
+            <span class="status-dot"></span>
+            <span>ONLINE</span>
+            `;
+
+    }
+
+
+    if (heroStatusText) {
+
+        heroStatusText.textContent =
+            "GUMWORLD ONLINE";
+
+    }
+
+
+    if (heroStatusDot) {
+
+        heroStatusDot.classList.remove(
+            "offline"
+        );
+
+    }
+
+
+    if (playerCount) {
+
+        const online =
+            data.players?.online ?? 0;
+
+
+        const max =
+            data.players?.max ?? "?";
+
+
+        playerCount.textContent =
+            online + " / " + max;
+
+    }
+
+
+    if (
+        serverVersion &&
+        data.version
+    ) {
+
+        serverVersion.textContent =
+            data.version;
+
+    }
+
+}
+
+
+// ==========================================
+// OFFLINE STATE
+// ==========================================
+
+function showOffline() {
+
+    if (serverStatus) {
+
+        serverStatus.classList.add(
+            "offline"
+        );
+
+
+        serverStatus.innerHTML =
+            `
+            <span class="status-dot offline"></span>
+            <span>OFFLINE</span>
+            `;
+
+    }
+
+
+    if (heroStatusText) {
+
+        heroStatusText.textContent =
+            "GUMWORLD OFFLINE";
+
+    }
+
+
+    if (heroStatusDot) {
+
+        heroStatusDot.classList.add(
+            "offline"
+        );
+
+    }
+
+
+    if (playerCount) {
+
+        playerCount.textContent =
+            "0 / —";
+
+    }
+
+}
+
+
+// ==========================================
+// UNKNOWN STATE
+// ==========================================
+
+function showUnknown() {
+
+    if (serverStatus) {
+
+        serverStatus.innerHTML =
+            `
+            <span>⚪</span>
+            <span>НЕТ ДАННЫХ</span>
+            `;
+
+    }
+
+
+    if (heroStatusText) {
+
+        heroStatusText.textContent =
+            "GUMWORLD";
+
+    }
+
+
+    if (playerCount) {
+
+        playerCount.textContent =
+            "— / —";
+
+    }
+
+}
+
+
+// ==========================================
+// UPDATE SERVER STATUS
+// ==========================================
 
 async function updateServerStatus() {
 
@@ -160,8 +349,10 @@ async function updateServerStatus() {
 
         const response =
             await fetch(
-                "https://api.mcsrvstat.us/3/" +
-                SERVER_IP
+                SERVER_API,
+                {
+                    cache: "no-store"
+                }
             );
 
 
@@ -180,83 +371,19 @@ async function updateServerStatus() {
 
         if (data.online) {
 
-
-            if (serverStatus) {
-
-                serverStatus.innerHTML =
-                    `
-                    <span class="status-dot"></span>
-                    ONLINE
-                    `;
-
-            }
-
-
-            if (
-                playerCount &&
-                data.players
-            ) {
-
-                const online =
-                    data.players.online ?? 0;
-
-
-                const max =
-                    data.players.max ?? "?";
-
-
-                playerCount.textContent =
-                    online + " / " + max;
-
-            }
-
-
-            if (
-                serverVersion &&
-                data.version
-            ) {
-
-                serverVersion.textContent =
-                    data.version;
-
-            }
+            showOnline(data);
 
         }
 
-
         else {
 
-
-            if (serverStatus) {
-
-                serverStatus.textContent =
-                    "🔴 OFFLINE";
-
-            }
-
-
-            if (playerCount) {
-
-                playerCount.textContent =
-                    "0 / —";
-
-            }
-
-
-            if (serverVersion) {
-
-                serverVersion.textContent =
-                    "Недоступно";
-
-            }
+            showOffline();
 
         }
 
     }
 
-
     catch (error) {
-
 
         console.error(
             "Не удалось получить статус сервера:",
@@ -264,29 +391,21 @@ async function updateServerStatus() {
         );
 
 
-        if (serverStatus) {
-
-            serverStatus.textContent =
-                "⚪ НЕТ ДАННЫХ";
-
-        }
-
-
-        if (playerCount) {
-
-            playerCount.textContent =
-                "— / —";
-
-        }
+        showUnknown();
 
     }
 
 }
 
 
+// ==========================================
+// START
+// ==========================================
 
 updateServerStatus();
 
+
+// Обновляем раз в минуту
 
 setInterval(
     updateServerStatus,

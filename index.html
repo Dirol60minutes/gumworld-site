@@ -22,15 +22,23 @@
 
 <body>
 
+<!-- ==========================================
+     HEADER
+========================================== -->
+
 <header class="header">
 
     <div class="container header-inner">
 
-        <a href="#home" class="logo">
+        <a
+            href="#home"
+            class="logo"
+        >
 
             <span class="logo-icon">
                 🍬
             </span>
+
 
             <span class="logo-text">
 
@@ -96,27 +104,37 @@
 
 <main>
 
+
+<!-- ==========================================
+     HERO
+========================================== -->
+
 <section
     class="hero"
     id="home"
 >
 
     <div class="hero-background"></div>
-    <div class="hero-dark"></div>
-
-    <div class="hero-glow hero-glow-one"></div>
-    <div class="hero-glow hero-glow-two"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
 
 
     <div class="container hero-inner">
 
+
         <div class="hero-content">
 
-            <div class="hero-label">
+            <div class="hero-badge">
 
-                <span class="status-dot"></span>
+                <span
+                    class="status-dot"
+                    id="heroStatusDot"
+                ></span>
 
-                GUMWORLD ONLINE
+                <span id="heroStatusText">
+                    GUMWORLD ONLINE
+                </span>
 
             </div>
 
@@ -145,7 +163,7 @@
             <div class="hero-buttons">
 
                 <button
-                    class="button button-main"
+                    class="button button-primary"
                     id="copyIpButton"
                     type="button"
                 >
@@ -171,9 +189,11 @@
         </div>
 
 
+        <!-- SERVER WIDGET -->
+
         <aside class="server-widget">
 
-            <div class="server-widget-header">
+            <div class="server-widget-top">
 
                 <div>
 
@@ -181,34 +201,38 @@
                         GUMWORLD SERVER
                     </span>
 
-                    <strong>
+                    <h2>
                         Статус сервера
-                    </strong>
+                    </h2>
 
                 </div>
 
 
                 <div
-                    class="online-badge"
+                    class="server-status"
                     id="serverStatus"
                 >
 
                     <span class="status-dot"></span>
 
-                    ONLINE
+                    <span>
+                        ONLINE
+                    </span>
 
                 </div>
 
             </div>
 
 
-            <div class="server-widget-info">
+            <div class="server-stats">
 
-                <div class="server-mini-stat">
 
-                    <span class="server-mini-icon">
+                <div class="server-stat">
+
+                    <span class="server-stat-icon">
                         👥
                     </span>
+
 
                     <div>
 
@@ -225,11 +249,12 @@
                 </div>
 
 
-                <div class="server-mini-stat">
+                <div class="server-stat">
 
-                    <span class="server-mini-icon">
+                    <span class="server-stat-icon">
                         🧩
                     </span>
+
 
                     <div>
 
@@ -249,14 +274,15 @@
 
 
             <button
-                class="server-address"
+                class="server-ip"
                 id="serverAddressButton"
                 type="button"
             >
 
-                <span>
+                <span class="server-stat-icon">
                     🌐
                 </span>
+
 
                 <div>
 
@@ -273,14 +299,14 @@
             </button>
 
 
-            <div class="server-widget-footer">
+            <div class="server-widget-bottom">
 
                 <span>
                     💜 MODDED WORLD
                 </span>
 
                 <span>
-                    READY
+                    ✨ READY
                 </span>
 
             </div>
@@ -291,6 +317,10 @@
 
 </section>
 
+
+<!-- ==========================================
+     ABOUT
+========================================== -->
 
 <section
     class="section"
@@ -305,14 +335,17 @@
                 О СЕРВЕРЕ
             </span>
 
+
             <h2>
                 Не просто Minecraft
             </h2>
 
+
             <p>
 
-                GumWorld — место, где обычное выживание
-                превращается в большое модовое приключение.
+                GumWorld — место, где обычное
+                выживание превращается в большое
+                модовое приключение.
 
             </p>
 
@@ -321,68 +354,77 @@
 
         <div class="features">
 
-            <article class="feature">
 
-                <div class="feature-icon">
-                    ⚙️
-                </div>
+            <article class="feature-card">
 
                 <span class="feature-number">
                     01
                 </span>
+
+                <div class="feature-icon">
+                    ⚙️
+                </div>
 
                 <h3>
                     Модовая сборка
                 </h3>
 
                 <p>
+
                     Технологии, новые механики,
                     предметы и множество возможностей
                     для развития.
+
                 </p>
 
             </article>
 
 
-            <article class="feature">
-
-                <div class="feature-icon">
-                    🌍
-                </div>
+            <article class="feature-card">
 
                 <span class="feature-number">
                     02
                 </span>
+
+                <div class="feature-icon">
+                    🌍
+                </div>
 
                 <h3>
                     Большой мир
                 </h3>
 
                 <p>
+
                     Исследуй мир, находи интересные
-                    места и создавай собственную историю.
+                    места и создавай собственную
+                    историю.
+
                 </p>
 
             </article>
 
 
-            <article class="feature">
-
-                <div class="feature-icon">
-                    💜
-                </div>
+            <article class="feature-card">
 
                 <span class="feature-number">
                     03
                 </span>
+
+                <div class="feature-icon">
+                    💜
+                </div>
 
                 <h3>
                     Сообщество
                 </h3>
 
                 <p>
+
                     Играй вместе с другими игроками,
-                    общайся и участвуй в развитии GumWorld.
+                    общайся и участвуй в развитии
+                    GumWorld.
+
                 </p>
 
             </article>
@@ -393,6 +435,10 @@
 
 </section>
 
+
+<!-- ==========================================
+     MODPACK
+========================================== -->
 
 <section
     class="section section-alt"
@@ -407,19 +453,25 @@
                 СБОРКА
             </span>
 
+
             <h2>
                 Всё необходимое для игры
             </h2>
 
+
             <p>
+
                 Скачай сборку GumWorld и NeoForge,
-                чтобы подготовить Minecraft к подключению.
+                чтобы подготовить Minecraft
+                к подключению.
+
             </p>
 
         </div>
 
 
         <div class="downloads">
+
 
             <article class="download-card">
 
@@ -428,9 +480,9 @@
                 </div>
 
 
-                <div class="download-info">
+                <div class="download-content">
 
-                    <span>
+                    <span class="download-caption">
                         GUMWORLD
                     </span>
 
@@ -439,8 +491,11 @@
                     </h3>
 
                     <p>
+
                         Готовая сборка модов,
-                        необходимая для игры на сервере.
+                        необходимая для игры
+                        на сервере GumWorld.
+
                     </p>
 
                 </div>
@@ -465,9 +520,9 @@
                 </div>
 
 
-                <div class="download-info">
+                <div class="download-content">
 
-                    <span>
+                    <span class="download-caption">
                         ЗАГРУЗЧИК МОДОВ
                     </span>
 
@@ -476,8 +531,11 @@
                     </h3>
 
                     <p>
+
                         Загрузчик модов,
-                        необходимый для запуска сборки GumWorld.
+                        необходимый для запуска
+                        сборки GumWorld.
+
                     </p>
 
                 </div>
@@ -487,7 +545,7 @@
                     href="https://neoforged.net/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="download-button download-button-secondary"
+                    class="download-button download-button-alt"
                 >
                     🔥 Скачать NeoForge
                 </a>
@@ -501,17 +559,17 @@
 </section>
 
 
-<!-- =========================================
-     МИР GUMWORLD — 4 КАРТИНКИ
-========================================= -->
+<!-- ==========================================
+     WORLD
+========================================== -->
 
 <section
     class="section world-section"
     id="world"
 >
 
-    <div class="world-glow world-glow-one"></div>
-    <div class="world-glow world-glow-two"></div>
+    <div class="world-glow world-glow-left"></div>
+    <div class="world-glow world-glow-right"></div>
 
 
     <div class="container">
@@ -522,36 +580,59 @@
                 МИР GUMWORLD
             </span>
 
+
             <h2>
                 Посмотри на наш мир
             </h2>
 
+
             <p>
+
                 Несколько кадров с GumWorld.
                 Здесь игроки строят, исследуют мир
                 и создают собственные истории.
+
             </p>
 
         </div>
 
 
+        <!--
+            WORLD-1 УБРАН.
+            ОСТАЛИСЬ ТОЛЬКО 4 КАРТИНКИ.
+        -->
+
         <div class="world-gallery">
 
 
-            <article class="world-shot">
+            <article class="world-card">
 
                 <img
                     src="assets/world-2.png"
                     alt="Дикая природа GumWorld"
                 >
 
-                <div class="world-shot-overlay">
 
-                    <span>🌲</span>
+                <div class="world-card-shade"></div>
+
+
+                <div class="world-card-info">
+
+                    <span class="world-card-icon">
+                        🌲
+                    </span>
+
 
                     <div>
-                        <small>GUMWORLD</small>
-                        <strong>Дикая природа</strong>
+
+                        <small>
+                            GUMWORLD
+                        </small>
+
+                        <strong>
+                            Дикая природа
+                        </strong>
+
                     </div>
 
                 </div>
@@ -559,20 +640,34 @@
             </article>
 
 
-            <article class="world-shot">
+            <article class="world-card">
 
                 <img
                     src="assets/world-3.png"
                     alt="Горы и озёра GumWorld"
                 >
 
-                <div class="world-shot-overlay">
 
-                    <span>🏔️</span>
+                <div class="world-card-shade"></div>
+
+
+                <div class="world-card-info">
+
+                    <span class="world-card-icon">
+                        🏔️
+                    </span>
+
 
                     <div>
-                        <small>GUMWORLD</small>
-                        <strong>Горы и озёра</strong>
+
+                        <small>
+                            GUMWORLD
+                        </small>
+
+                        <strong>
+                            Горы и озёра
+                        </strong>
+
                     </div>
 
                 </div>
@@ -580,20 +675,34 @@
             </article>
 
 
-            <article class="world-shot">
+            <article class="world-card">
 
                 <img
                     src="assets/world-4.png"
                     alt="Спавн GumWorld"
                 >
 
-                <div class="world-shot-overlay">
 
-                    <span>🌿</span>
+                <div class="world-card-shade"></div>
+
+
+                <div class="world-card-info">
+
+                    <span class="world-card-icon">
+                        🌿
+                    </span>
+
 
                     <div>
-                        <small>GUMWORLD</small>
-                        <strong>Наш спавн</strong>
+
+                        <small>
+                            GUMWORLD
+                        </small>
+
+                        <strong>
+                            Наш спавн
+                        </strong>
+
                     </div>
 
                 </div>
@@ -601,20 +710,34 @@
             </article>
 
 
-            <article class="world-shot">
+            <article class="world-card">
 
                 <img
                     src="assets/world-5.png"
                     alt="Дом и ферма GumWorld"
                 >
 
-                <div class="world-shot-overlay">
 
-                    <span>🌾</span>
+                <div class="world-card-shade"></div>
+
+
+                <div class="world-card-info">
+
+                    <span class="world-card-icon">
+                        🌾
+                    </span>
+
 
                     <div>
-                        <small>GUMWORLD</small>
-                        <strong>Дом и ферма</strong>
+
+                        <small>
+                            GUMWORLD
+                        </small>
+
+                        <strong>
+                            Дом и ферма
+                        </strong>
+
                     </div>
 
                 </div>
@@ -627,6 +750,10 @@
 
 </section>
 
+
+<!-- ==========================================
+     TEAM
+========================================== -->
 
 <section
     class="section section-alt"
@@ -641,14 +768,18 @@
                 КОМАНДА
             </span>
 
+
             <h2>
                 Команда GumWorld
             </h2>
 
+
             <p>
+
                 Пока нас немного,
                 но именно мы создаём,
                 развиваем и поддерживаем GumWorld.
+
             </p>
 
         </div>
@@ -656,7 +787,10 @@
 
         <div class="team-grid">
 
-            <article class="member">
+
+            <!-- ORBIT -->
+
+            <article class="member-card">
 
                 <div class="member-avatar">
 
@@ -670,7 +804,7 @@
 
                 <div class="member-content">
 
-                    <div class="member-top">
+                    <div class="member-title">
 
                         <div>
 
@@ -685,7 +819,7 @@
                         </div>
 
 
-                        <span class="member-rank owner">
+                        <span class="rank rank-owner">
                             ВЛАДЕЛЕЦ
                         </span>
 
@@ -702,8 +836,11 @@
 
 
                     <p>
-                        Технический администратор Minecraft-сервера
-                        и владелец проекта GumWorld.
+
+                        Технический администратор
+                        Minecraft-сервера и владелец
+                        проекта GumWorld.
+
                     </p>
 
 
@@ -728,7 +865,9 @@
             </article>
 
 
-            <article class="member">
+            <!-- DIROL -->
+
+            <article class="member-card">
 
                 <div class="member-avatar">
 
@@ -742,7 +881,7 @@
 
                 <div class="member-content">
 
-                    <div class="member-top">
+                    <div class="member-title">
 
                         <div>
 
@@ -757,7 +896,7 @@
                         </div>
 
 
-                        <span class="member-rank admin">
+                        <span class="rank rank-admin">
                             АДМИНИСТРАТОР
                         </span>
 
@@ -770,7 +909,7 @@
                             ⚙️ Bubble Engineer
                         </span>
 
-                        <span class="support">
+                        <span class="role-support">
                             💚 Bubble Support
                         </span>
 
@@ -778,9 +917,12 @@
 
 
                     <p>
+
                         Администратор Minecraft-сервера,
-                        технический администратор Discord-бота
-                        GumHelp и создатель сайта GumWorld.
+                        технический администратор
+                        Discord-бота GumHelp
+                        и создатель сайта GumWorld.
+
                     </p>
 
 
@@ -807,6 +949,10 @@
         </div>
 
 
+        <!-- ==========================================
+             REQUIREMENTS
+        =========================================== -->
+
         <div class="requirements">
 
             <div class="requirements-heading">
@@ -815,14 +961,18 @@
                     ТРЕБОВАНИЯ
                 </span>
 
+
                 <h2>
                     Хочешь стать частью команды?
                 </h2>
 
+
                 <p>
+
                     Перед подачей заявки убедись,
                     что ты подходишь под основные
                     требования GumWorld.
+
                 </p>
 
             </div>
@@ -830,11 +980,13 @@
 
             <div class="requirements-grid">
 
-                <article class="requirement">
 
-                    <div class="requirement-icon">
+                <article class="requirement-card">
+
+                    <span class="requirement-icon">
                         🎂
-                    </div>
+                    </span>
+
 
                     <div>
 
@@ -843,9 +995,11 @@
                         </h3>
 
                         <p>
+
                             Мы ищем участников от 16 лет,
-                            которые готовы серьёзно относиться
-                            к своим обязанностям.
+                            которые готовы серьёзно
+                            относиться к своим обязанностям.
+
                         </p>
 
                     </div>
@@ -853,11 +1007,12 @@
                 </article>
 
 
-                <article class="requirement">
+                <article class="requirement-card">
 
-                    <div class="requirement-icon">
+                    <span class="requirement-icon">
                         🧠
-                    </div>
+                    </span>
+
 
                     <div>
 
@@ -866,9 +1021,11 @@
                         </h3>
 
                         <p>
+
                             Спокойное общение с игроками,
                             уважение к другим участникам
                             и умение решать конфликты.
+
                         </p>
 
                     </div>
@@ -876,11 +1033,12 @@
                 </article>
 
 
-                <article class="requirement">
+                <article class="requirement-card">
 
-                    <div class="requirement-icon">
+                    <span class="requirement-icon">
                         🛡️
-                    </div>
+                    </span>
+
 
                     <div>
 
@@ -889,9 +1047,11 @@
                         </h3>
 
                         <p>
+
                             Если взял на себя задачу —
                             постарайся выполнить её
                             и не пропадай без предупреждения.
+
                         </p>
 
                     </div>
@@ -899,11 +1059,12 @@
                 </article>
 
 
-                <article class="requirement">
+                <article class="requirement-card">
 
-                    <div class="requirement-icon">
+                    <span class="requirement-icon">
                         ⏰
-                    </div>
+                    </span>
+
 
                     <div>
 
@@ -912,10 +1073,12 @@
                         </h3>
 
                         <p>
+
                             Не обязательно находиться
                             на сервере весь день,
                             но важно регулярно участвовать
                             в жизни GumWorld.
+
                         </p>
 
                     </div>
@@ -923,11 +1086,12 @@
                 </article>
 
 
-                <article class="requirement">
+                <article class="requirement-card">
 
-                    <div class="requirement-icon">
+                    <span class="requirement-icon">
                         💬
-                    </div>
+                    </span>
+
 
                     <div>
 
@@ -936,9 +1100,11 @@
                         </h3>
 
                         <p>
+
                             Общение команды, задачи
                             и важные вопросы обсуждаются
                             через наш Discord-сервер.
+
                         </p>
 
                     </div>
@@ -946,11 +1112,12 @@
                 </article>
 
 
-                <article class="requirement">
+                <article class="requirement-card">
 
-                    <div class="requirement-icon">
+                    <span class="requirement-icon">
                         💜
-                    </div>
+                    </span>
+
 
                     <div>
 
@@ -959,9 +1126,11 @@
                         </h3>
 
                         <p>
-                            Нам нужны люди, которым
-                            действительно интересно
+
+                            Нам нужны люди,
+                            которым действительно интересно
                             развивать GumWorld.
+
                         </p>
 
                     </div>
@@ -972,13 +1141,19 @@
 
 
             <div class="requirements-note">
+
                 ✨ Соответствие требованиям
                 не гарантирует принятие в команду.
                 Каждая заявка рассматривается отдельно.
+
             </div>
 
         </div>
 
+
+        <!-- ==========================================
+             RECRUITMENT
+        =========================================== -->
 
         <div class="recruitment">
 
@@ -987,7 +1162,7 @@
             </div>
 
 
-            <div class="recruitment-text">
+            <div class="recruitment-content">
 
                 <span>
                     НАБОР В КОМАНДУ
@@ -1021,7 +1196,7 @@
                 href="https://discord.gg/zU57nHHbJE"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="button button-secondary recruitment-button"
+                class="button button-secondary"
             >
                 💬 Подать заявку
             </a>
@@ -1035,6 +1210,10 @@
 </main>
 
 
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
 <footer class="footer">
 
     <div class="container footer-inner">
@@ -1044,6 +1223,7 @@
             <span class="logo-icon">
                 🍬
             </span>
+
 
             <div>
 
