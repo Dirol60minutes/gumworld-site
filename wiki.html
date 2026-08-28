@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="GumWorld Wiki — инструкция по установке сборки, NeoForge и подключению к серверу GumWorld."
+    >
+
+    <title>GumWorld Wiki — Установка сборки</title>
+
+    <link
+        rel="stylesheet"
+        href="wiki.css?v=1"
+    >
+</head>
+
+
+<body>
+
+
+<!-- =========================================
+     HEADER
+========================================= -->
+
+<header class="header">
+
+    <div class="container header-inner">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
+
+            <div class="logo-icon">
+                🍬
+            </div>
+
+            <div class="logo-text">
+
+                <strong>
+                    GumWorld
+                </strong>
+
+                <span>
+                    WIKI
+                </span>
+
+            </div>
+
+        </a>
+
+
+        <nav class="nav">
+
+            <a href="index.html">
+                🏠 Главная
+            </a>
+
+            <a href="#about">
+                📖 О сборке
+            </a>
+
+            <a href="#install">
+                📦 Установка
+            </a>
+
+            <a href="#server">
+                🌐 Сервер
+            </a>
+
+            <a href="#help">
+                🛠️ Помощь
+            </a>
+
+        </nav>
+
+
+        <a
+            href="https://discord.gg/zU57nHHbJE"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="discord-button"
+        >
+            💬 Discord
+        </a>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================
+     HERO
+========================================= -->
+
+<section class="hero">
+
+    <div class="hero-background"></div>
+    <div class="hero-overlay"></div>
+
+
+    <div class="container hero-content">
+
+        <div class="hero-badge">
+            📚 GUMWORLD WIKI
+        </div>
+
+
+        <h1>
+
+            Установка сборки
+
+            <span>
+                GumWorld
+            </span>
+
+        </h1>
+
+
+        <p class="hero-description">
+
+            Пошаговая инструкция по установке
+            NeoForge и модовой сборки GumWorld.
+
+            Просто выполняй шаги по порядку
+            и сверяйся со скриншотами.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a
+                href="#install"
+                class="button button-main"
+            >
+                📦 Начать установку
+            </a>
+
+
+            <a
+                href="https://drive.google.com/drive/folders/1flrdGt2AJrT5dBTFUce9heENGvHTJhRK"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button button-secondary"
+            >
+                ⬇️ Скачать сборку
+            </a>
+
+        </div>
+
+
+        <div class="hero-info">
+
+            <div>
+                <span>🎮</span>
+
+                <p>
+                    Minecraft
+                    <strong>1.21.1</strong>
+                </p>
+            </div>
+
+
+            <div>
+                <span>🔥</span>
+
+                <p>
+                    NeoForge
+                    <strong>21.1.248</strong>
+                </p>
+            </div>
+
+
+            <div>
+                <span>🌐</span>
+
+                <p>
+                    Сервер
+                    <strong>gumworld.noob.club</strong>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================
+     MAIN
+========================================= -->
+
+<div class="container page-layout">
+
+
+    <!-- =====================================
+         SIDEBAR
+    ====================================== -->
+
+    <aside class="sidebar">
+
+        <span class="sidebar-title">
+            СОДЕРЖАНИЕ
+        </span>
+
+
+        <a href="#about">
+            📖 О сборке
+        </a>
+
+        <a href="#requirements">
+            💻 Что понадобится
+        </a>
+
+        <a href="#install">
+            📦 Установка
+        </a>
+
+        <a href="#step-1">
+            01 — Ссылки
+        </a>
+
+        <a href="#step-2">
+            02 — Скачать сборку
+        </a>
+
+        <a href="#step-3">
+            03 — Скачать NeoForge
+        </a>
+
+        <a href="#step-4">
+            04 — Установить NeoForge
+        </a>
+
+        <a href="#step-5">
+            05 — Открыть сборку
+        </a>
+
+        <a href="#step-6">
+            06 — Перенести файлы
+        </a>
+
+        <a href="#step-7">
+            07 — Выбрать NeoForge
+        </a>
+
+        <a href="#step-8">
+            08 — Запустить игру
+        </a>
+
+        <a href="#step-9">
+            09 — Подключиться
+        </a>
+
+        <a href="#help">
+            🛠️ Проблемы
+        </a>
+
+    </aside>
+
+
+
+    <!-- =====================================
+         CONTENT
+    ====================================== -->
+
+    <main class="content">
+
+
+        <!-- =================================
+             ABOUT
+        ================================== -->
+
+        <section
+            class="wiki-section"
+            id="about"
+        >
+
+            <span class="section-label">
+                GUMWORLD MODPACK
+            </span>
+
+
+            <h2>
+                О сборке
+            </h2>
+
+
+            <p class="section-description">
+
+                Для игры на GumWorld используется собственная
+                модовая сборка на Minecraft 1.21.1.
+
+                Для её запуска необходимо установить NeoForge
+                и перенести файлы сборки в папку Minecraft.
+
+            </p>
+
+
+            <div class="important-box">
+
+                <div class="important-icon">
+                    💡
+                </div>
+
+
+                <div>
+
+                    <strong>
+                        Важно
+                    </strong>
+
+                    <p>
+
+                        Используй файлы сборки GumWorld и нужную
+                        версию NeoForge. Изменение модов может
+                        привести к ошибкам при подключении к серверу.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             REQUIREMENTS
+        ================================== -->
+
+        <section
+            class="wiki-section"
+            id="requirements"
+        >
+
+            <span class="section-label">
+                ПЕРЕД НАЧАЛОМ
+            </span>
+
+
+            <h2>
+                Что понадобится
+            </h2>
+
+
+            <div class="requirements-grid">
+
+
+                <article class="requirement">
+
+                    <span>
+                        🎮
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Minecraft 1.21.1
+                        </h3>
+
+                        <p>
+                            Версия игры, используемая сервером.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="requirement">
+
+                    <span>
+                        🔥
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            NeoForge
+                        </h3>
+
+                        <p>
+                            Загрузчик модов для запуска сборки.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="requirement">
+
+                    <span>
+                        📦
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            GumWorld Modpack
+                        </h3>
+
+                        <p>
+                            Папки с модами, конфигами и ресурсами.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="requirement">
+
+                    <span>
+                        🌐
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Интернет
+                        </h3>
+
+                        <p>
+                            Для загрузки файлов и подключения к серверу.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             INSTALL TITLE
+        ================================== -->
+
+        <section
+            class="wiki-section install-intro"
+            id="install"
+        >
+
+            <span class="section-label">
+                ПОШАГОВАЯ ИНСТРУКЦИЯ
+            </span>
+
+
+            <h2>
+                Установка GumWorld
+            </h2>
+
+
+            <p class="section-description">
+
+                Ниже находятся все шаги установки.
+                Нажми на любой скриншот, чтобы открыть его крупнее.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================
+             STEP 1
+        ================================== -->
+
+        <article
+            class="install-step"
+            id="step-1"
+        >
+
+            <div class="step-header">
+
+                <div class="step-number">
+                    01
+                </div>
+
+
+                <div>
+
+                    <span class="step-label">
+                        НАЧАЛО
+                    </span>
+
+                    <h2>
+                        Найди ссылки GumWorld
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <p class="step-description">
+
+                В Discord GumWorld находятся основные ссылки:
+                сборка, NeoForge и другая информация о сервере.
+
+                Для ручной установки нам понадобятся ссылка
+                на Google Drive со сборкой и официальный сайт NeoForge.
+
+            </p>
+
+
+            <div class="step-links">
+
+                <a
+                    href="https://drive.google.com/drive/folders/1flrdGt2AJrT5dBTFUce9heENGvHTJhRK"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    📦 Google Drive
+                </a>
+
+
+                <a
+                    href="https://neoforged.net/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    🔥 NeoForge
+                </a>
+
+            </div>
+
+
+            <button
+                class="screenshot"
+                type="button"
+                data-image="assets/wiki-1.png"
+                aria-label="Увеличить скриншот шага 1"
+            >
+
+                <img
+                    src="assets/wiki-1.png"
+                    alt="Информация GumWorld в Discord"
+                    loading="lazy"
+                >
+
+                <span class="zoom-hint">
+                    🔍 Нажми, чтобы увеличить
+                </span>
+
+            </button>
+
+        </article>
+
+
+
+        <!-- =================================
+             STEP 2
+        ================================== -->
+
+        <article
+            class="install-step"
+            id="step-2"
+        >
+
+            <div class="step-header">
+
+                <div class="step-number">
+                    02
+                </div>
+
+
+                <div>
+
+                    <span class="step-label">
+                        СБОРКА
+                    </span>
+
+                    <h2>
+                        Открой страницу загрузки
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <p class="step-description">
+
+                На сайте GumWorld нажми кнопку
+                «Скачать сборку».
+
+                Для ручной установки тебе понадобится
+                папка со сборкой из Google Drive.
+
+            </p>
+
+
+            <button
+                class="screenshot"
+                type="button"
+                data-image="assets/wiki-2.png"
+                aria-label="Увеличить скриншот шага 2"
+            >
+
+                <img
+                    src="assets/wiki-2.png"
+                    alt="Страница загрузки сборки GumWorld"
+                    loading="lazy"
+                >
+
+                <span class="zoom-hint">
+                    🔍 Нажми, чтобы увеличить
+                </span>
+
+            </button>
+
+        </article>
+
+
+
+        <!-- =================================
+             STEP 3
+        ================================== -->
+
+        <article
+            class="install-step"
+            id="step-3"
+        >
+
+            <div class="step-header">
+
+                <div class="step-number">
+                    03
+                </div>
+
+
+                <div>
+
+                    <span class="step-label">
+                        NEOFORGE
+                    </span>
+
+                    <h2>
+                        Скачай NeoForge
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <p class="step-description">
+
+                Открой официальный сайт NeoForge.
+
+                В поле Minecraft Version выбери
+                <strong>1.21.1</strong>.
+
+                После этого скачай Installer.
+
+            </p>
+
+
+            <a
+                href="https://neoforged.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-button"
+            >
+                🔥 Открыть NeoForge
+            </a>
+
+
+            <button
+                class="screenshot"
+                type="button"
+                data-image="assets/wiki-3.png"
+                aria-label="Увеличить скриншот шага 3"
+            >
+
+                <img
+                    src="assets/wiki-3.png"
+                    alt="Выбор Minecraft 1.21.1 на сайте NeoForge"
+                    loading="lazy"
+                >
+
+                <span class="zoom-hint">
+                    🔍 Нажми, чтобы увеличить
+                </span>
+
+            </button>
+
+        </article>
+
+
+
+        <!-- =================================
+             STEP 4
+        ================================== -->
+
+        <article
+            class="install-step"
+            id="step-4"
+        >
+
+            <div class="step-header">
+
+                <div class="step-number">
+                    04
+                </div>
+
+
+                <div>
+
+                    <span class="step-label">
+                        СКАЧИВАНИЕ
+                    </span>
+
+                    <h2>
+                        Скачай папку GumWorld
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <p class="step-description">
+
+                Открой Google Drive GumWorld.
+
+                Найди папку
+                <strong>«GumWorld Neofordg установка в ручную»</strong>
+                и скачай её на компьютер.
+
+            </p>
+
+
+            <a
+                href="https://drive.google.com/drive/folders/1flrdGt2AJrT5dBTFUce9heENGvHTJhRK"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-button"
+            >
+                📦 Открыть Google Drive
+            </a>
+
+
+            <button
+                class="screenshot"
+                type="button"
+                data-image="assets/wiki-4.png"
+                aria-label="Увеличить скриншот шага 4"
+            >
+
+                <img
+                    src="assets/wiki-4.png"
+                    alt="Скачивание папки GumWorld с Google Drive"
+                    loading="lazy"
+                >
+
+                <span class="zoom-hint">
+                    🔍 Нажми, чтобы увеличить
+                </span>
+
+            </button>
+
+        </article>
+
+
+
+        <!-- =================================
+             STEP 5
+        ================================== -->
+
+        <article
+            class="install-step"
+            id="step-5"
+        >
+
+            <div class="step-header">
+
+                <div class="step-number">
+                    05
+                </div>
+
+
+                <div>
+
+                    <span class="step-label">
+                        УСТАНОВКА NEOFORGE
+                    </span>
+
+                    <h2>
+                        Установи NeoForge
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <p class="step-description">
+
+                Запусти скачанный NeoForge Installer.
+
+                Выбери
+                <strong>Install client</strong>.
+
+                Проверь, что снизу указана папка
+                <strong>.minecraft</strong>,
+                и нажми
+                <strong>Proceed</strong>.
+
+            </p>
+
+
+            <button
+                class="screenshot screenshot-small"
+                type="button"
+                data-image="assets/wiki-5.png"
+                aria-label="Увеличить скриншот шага 5"
+            >
+
+                <img
+                    src="assets/wiki-5.png"
+                    alt="Установка NeoForge через Install client"
+                    loading="lazy"
+                >
+
+                <span class="zoom-hint">
+                    🔍 Нажми, чтобы увеличить
+                </span>
+
+            </button>
+
+        </article>
+
+
+
+        <!-- =================================
+             STEP 6
+        ================================== -->
+
+        <article
+            class="install-step"
+            id="step-6"
+        >
+
+            <div class="step-header">
+
+                <div class="step-number">
+                    06
+                </div>
+
+
+                <div>
+
+                    <span class="step-label">
+                        ФАЙЛЫ СБОРКИ
+                    </span>
+
+                    <h2>
+                        Открой скачанную сборку
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <p class="step-description">
+
+                После скачивания открой папку
+                <strong>GumWorld Neofordg установка в ручную</strong>.
+
+                Внутри находятся файлы, которые
+                нужно установить в Minecraft.
+
+            </p>
+
+
+            <button
+                class="screenshot"
+                type="button"
+                data-image="assets/wiki-8.png"
+                aria-label="Увеличить скриншот шага 6"
+            >
+
+                <img
+                    src="assets/wiki-8.png"
+                    alt="Скачанная папка GumWorld"
+                    loading="lazy"
+                >
+
+                <span class="zoom-hint">
+                    🔍 Нажми, чтобы увеличить
+                </span>
+
+            </button>
+
+        </article>
+
+
+
+        <!-- =================================
+             STEP 7
+        ================================== -->
+
+        <article
+            class="install-step"
+            id="step-7"
+        >
+
+            <div class="step-header">
+
+                <div class="step-number">
+                    07
+                </div>
+
+
+                <div>
+
+                    <span class="step-label">
+                        .MINECRAFT
+                    </span>
+
+                    <h2>
+                        Перенеси файлы сборки
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <p class="step-description">
+
+                Открой папку
+                <strong>.minecraft</strong>.
+
+                Перенеси туда папки из сборки:
+
+            </p>
+
+
+            <div class="folder-list">
+
+                <span>
+                    📁 config
+                </span>
+
+                <span>
+                    📁 mods
+                </span>
+
+                <span>
+                    📁 resourcepacks
+                </span>
+
+                <span>
+                    📁 shaderpacks
+                </span>
+
+            </div>
+
+
+            <div class="warning-box">
+
+                ⚠️ Если Windows спросит о замене или объединении
+                папок, внимательно проверь файлы перед подтверждением.
+
+            </div>
+
+
+            <button
+                class="screenshot"
+                type="button"
+                data-image="assets/wiki-9.png"
+                aria-label="Увеличить скриншот шага 7"
+            >
+
+                <img
+                    src="assets/wiki-9.png"
+                    alt="Перенос папок сборки в .minecraft"
+                    loading="lazy"
+                >
+
+                <span class="zoom-hint">
+                    🔍 Нажми, чтобы увеличить
+                </span>
+
+            </button>
+
+        </article>
+
+
+
+        <!-- =================================
+             STEP 8
+        ================================== -->
+
+        <article
+            class="install-step"
+            id="step-8"
+        >
+
+            <div class="step-header">
+
+                <div class="step-number">
+                    08
+                </div>
+
+
+                <div>
+
+                    <span class="step-label">
+                        ЛАУНЧЕР
+                    </span>
+
+                    <h2>
+                        Выбери профиль NeoForge
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <p class="step-description">
+
+                Вернись в Minecraft Launcher.
+
+                В списке версий выбери установленный профиль:
+
+                <strong>neoforge-21.1.248</strong>.
+
+            </p>
+
+
+            <button
+                class="screenshot screenshot-small"
+                type="button"
+                data-image="assets/wiki-6.png"
+                aria-label="Увеличить скриншот шага 8"
+            >
+
+                <img
+                    src="assets/wiki-6.png"
+                    alt="Выбор версии NeoForge 21.1.248"
+                    loading="lazy"
+                >
+
+                <span class="zoom-hint">
+                    🔍 Нажми, чтобы увеличить
+                </span>
+
+            </button>
+
+        </article>
+
+
+
+        <!-- =================================
+             STEP 9
+        ================================== -->
+
+        <article
+            class="install-step"
+            id="step-9"
+        >
+
+            <div class="step-header">
+
+                <div class="step-number">
+                    09
+                </div>
+
+
+                <div>
+
+                    <span class="step-label">
+                        ЗАПУСК
+                    </span>
+
+                    <h2>
+                        Запусти Minecraft
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <p class="step-description">
+
+                Убедись, что выбран профиль
+                <strong>neoforge-21.1.248</strong>.
+
+                После этого запускай Minecraft.
+
+                Первый запуск модовой сборки может
+                занять больше времени, чем обычный.
+
+            </p>
+
+
+            <button
+                class="screenshot"
+                type="button"
+                data-image="assets/wiki-7.png"
+                aria-label="Увеличить скриншот шага 9"
+            >
+
+                <img
+                    src="assets/wiki-7.png"
+                    alt="Запуск Minecraft с NeoForge"
+                    loading="lazy"
+                >
+
+                <span class="zoom-hint">
+                    🔍 Нажми, чтобы увеличить
+                </span>
+
+            </button>
+
+
+            <div class="success-box">
+
+                <span>
+                    ✅
+                </span>
+
+
+                <div>
+
+                    <strong>
+                        Сборка установлена
+                    </strong>
+
+                    <p>
+
+                        После запуска Minecraft можно
+                        переходить к подключению на GumWorld.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <!-- =================================
+             SERVER
+        ================================== -->
+
+        <section
+            class="wiki-section"
+            id="server"
+        >
+
+            <span class="section-label">
+                ПОДКЛЮЧЕНИЕ
+            </span>
+
+
+            <h2>
+                Зайди на GumWorld
+            </h2>
+
+
+            <p class="section-description">
+
+                В Minecraft открой сетевую игру,
+                добавь сервер и используй адрес ниже.
+
+            </p>
+
+
+            <div class="server-card">
+
+                <div class="server-left">
+
+                    <div class="server-icon">
+                        🌐
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            IP СЕРВЕРА
+                        </span>
+
+                        <strong>
+                            gumworld.noob.club
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="button"
+                    class="copy-button"
+                    id="copyIpButton"
+                >
+                    📋 Скопировать IP
+                </button>
+
+            </div>
+
+
+            <div
+                class="copy-message"
+                id="copyMessage"
+            >
+                ✅ IP скопирован
+            </div>
+
+        </section>
+
+
+
+        <!-- =================================
+             HELP
+        ================================== -->
+
+        <section
+            class="wiki-section"
+            id="help"
+        >
+
+            <span class="section-label">
+                ПОМОЩЬ
+            </span>
+
+
+            <h2>
+                Если что-то не работает
+            </h2>
+
+
+            <div class="help-grid">
+
+
+                <article class="help-card">
+
+                    <h3>
+                        ❌ Нет NeoForge в лаунчере
+                    </h3>
+
+                    <p>
+
+                        Перезапусти лаунчер после установки NeoForge
+                        и снова проверь список версий.
+
+                    </p>
+
+                </article>
+
+
+
+                <article class="help-card">
+
+                    <h3>
+                        ❌ Ошибка модов
+                    </h3>
+
+                    <p>
+
+                        Проверь, что папки сборки были перенесены
+                        правильно и моды не были удалены.
+
+                    </p>
+
+                </article>
+
+
+
+                <article class="help-card">
+
+                    <h3>
+                        ❌ Не подключается к серверу
+                    </h3>
+
+                    <p>
+
+                        Проверь версию Minecraft, NeoForge,
+                        сборку и адрес сервера.
+
+                    </p>
+
+                </article>
+
+
+
+                <article class="help-card help-discord">
+
+                    <h3>
+                        💬 Всё равно не работает?
+                    </h3>
+
+                    <p>
+
+                        Напиши в Discord GumWorld.
+                        Постарайся приложить скрин ошибки.
+
+                    </p>
+
+
+                    <a
+                        href="https://discord.gg/zU57nHHbJE"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Перейти в Discord →
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+</div>
+
+
+
+<!-- =========================================
+     FOOTER
+========================================= -->
+
+<footer class="footer">
+
+    <div class="container footer-inner">
+
+        <div>
+
+            <strong>
+                🍬 GumWorld Wiki
+            </strong>
+
+            <p>
+                Инструкции и информация о сервере GumWorld.
+            </p>
+
+        </div>
+
+
+        <a href="index.html">
+            ← Вернуться на главный сайт
+        </a>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =========================================
+     IMAGE MODAL
+========================================= -->
+
+<div
+    class="image-modal"
+    id="imageModal"
+    aria-hidden="true"
+>
+
+    <button
+        type="button"
+        class="modal-close"
+        id="modalClose"
+        aria-label="Закрыть изображение"
+    >
+        ✕
+    </button>
+
+
+    <img
+        src=""
+        alt="Увеличенный скриншот"
+        id="modalImage"
+    >
+
+</div>
+
+
+
+<script src="wiki.js?v=1"></script>
+
+</body>
+
+</html>
